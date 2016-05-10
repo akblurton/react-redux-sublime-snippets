@@ -1,11 +1,12 @@
 <snippet>
     <content><![CDATA[export const ${1:ACTION_TYPE} = "$1";
-export function ${1/(_([A-Za-z0-9]))|(\w)/(?1\u$2:)(?3\l$3:)/g}(${2:params}) {
+export const ${1/(_([A-Za-z0-9]))|(\w)/(?1\u$2:)(?3\l$3:)/g} = (${2:data}) => {
 	return {
 		type: $1${5:,
 		${4:data}}
 	};
-}
+};
+$6
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>act</tabTrigger>

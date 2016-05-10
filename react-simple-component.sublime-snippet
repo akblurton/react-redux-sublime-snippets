@@ -1,5 +1,5 @@
 <snippet>
-		<content><![CDATA[import React from "react";
+		<content><![CDATA[import React, { PropTypes } from "react";
 
 const ${1:${TM_FILENAME/\.\w+$//}} = (${3:{ ${2:props} \}}) => {
 	return (
@@ -7,7 +7,16 @@ const ${1:${TM_FILENAME/\.\w+$//}} = (${3:{ ${2:props} \}}) => {
 	);
 };
 
+$1.propTypes = {
+	$5
+};
+
+$1.defaultProps = {
+	$6
+};
+
 export default $1;]]></content>
+		<description>React functional component skeleton</description>
 		<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 		<tabTrigger>rsc</tabTrigger>
 		<!-- Optional: Set a scope to limit where the snippet will trigger -->
