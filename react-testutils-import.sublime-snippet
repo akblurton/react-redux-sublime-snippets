@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[import TestUtils from "react-addons-test-utils";]]></content>
+  <description>React TestUtils Import</description>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>rtest</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.js</scope>
+</snippet>

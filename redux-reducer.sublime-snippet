@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[${1:export default }function$2(state = ${3:initialState}, action) {
+	switch(action.type) {
+	case $4:
+		return $5
+	default:
+		return state;
+	}
+}]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>reduce</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>Redux Reducer template</description>
+</snippet>
+

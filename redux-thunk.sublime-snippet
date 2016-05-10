@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[export const ${1:ACTION_TYPE} = "$1";
+export function ${2:doSomething}(${3:params}) {
+	return ${4:(dispatch, getState)} => {
+		$5
+	};
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>thunk</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+	<description>Redux thunk action</description>
+</snippet>
+
