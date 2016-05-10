@@ -1,0 +1,21 @@
+<snippet>
+    <content><![CDATA[import { fromJS } from "immutable";
+const ${1:DEFAULT_STATE} = fromJS({
+	$2
+});
+
+${3:export default }(state = ${4:DEFAULT_STATE}, action) => {
+	switch(action.type) {
+	case $5:
+		return $6
+	default:
+		return state;
+	}
+};]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>imm-reduce</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>Redux Reducer template (immutable)</description>
+</snippet>
+
