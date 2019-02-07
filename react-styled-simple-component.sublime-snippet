@@ -1,25 +1,23 @@
 <snippet>
 		<content><![CDATA[import React from "react";
 import PropTypes from "prop-types";
+import styles from "./${1:${TM_FILENAME/\.\w+$//}}.styl";
 
-const ${1:${TM_FILENAME/\.\w+$//}} = (${3:{ ${2:props} \}}) => {
-	return (
-		${4:<div></div>}
-	);
-};
+const ${1:${TM_FILENAME/\.\w+$//}} = (${3:{ ${2:props} \}}) => (
+	${4:<div className={styles.root\} />}
+);
 
 $1.propTypes = {
 	$5
 };
-
 $1.defaultProps = {
 	$6
 };
 
 export default $1;]]></content>
-		<description>React functional component skeleton</description>
+		<description>React styled functional component skeleton</description>
 		<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-		<tabTrigger>rsc</tabTrigger>
+		<tabTrigger>rssc</tabTrigger>
 		<!-- Optional: Set a scope to limit where the snippet will trigger -->
 		<scope>source.js</scope>
 </snippet>
