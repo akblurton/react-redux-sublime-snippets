@@ -3,15 +3,14 @@
 import PropTypes from "prop-types";
 import styles from "./${1:${TM_FILENAME/\.\w+$//}}.styl";
 
-const ${1:${TM_FILENAME/\.\w+$//}} = (${3:{ ${2:props} \}}) => (
-	${4:<div className={styles.root\} />}
-);
+const ${1:${TM_FILENAME/\.\w+$//}} = (${3:props}) => {
+	return (
+		${4:<div className={styles.root\} />}
+	);
+};
 
 $1.propTypes = {
 	$5
-};
-$1.defaultProps = {
-	$6
 };
 
 export default $1;]]></content>

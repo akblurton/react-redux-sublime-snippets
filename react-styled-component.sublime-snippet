@@ -4,20 +4,20 @@ import PropTypes from "prop-types";
 import styles from "./${1:${TM_FILENAME/\.\w+$//}}.styl";
 
 class ${1:${TM_FILENAME/\.\w+$//}} extends React.Component {
-	$1.propTypes = {
+	static propTypes = {
 		$5
 	};
 
-	$1.defaultProps = {
+	static defaultProps = {
 		$6
 	};
 
 	render() {
 		return (
-			${4:<div className={styles.root} />}
+			${4:<div className={styles.root\} />}
 		);
 	}
-};
+}
 
 export default $1;]]></content>
 		<description>React styled component skeleton</description>
